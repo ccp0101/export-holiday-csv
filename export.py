@@ -22,8 +22,6 @@ for country, calendar_id in country_calendars_map.items():
         start = event.get('dtstart').dt
         end = event.get('dtend').dt
         diff = end - start
-        import pdb
-        pdb.set_trace()
         summary = event.get('summary').encode("utf8")
 
         for i in xrange(diff.days):
